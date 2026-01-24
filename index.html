@@ -3,27 +3,249 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jorge García | Proyectos</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #111323;
+      --muted: #5f6472;
+      --accent: #3a5bff;
+      --accent-2: #15b79e;
+      --shadow: 0 24px 48px rgba(16, 24, 40, 0.08);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top left, #eef2ff 0%, var(--bg) 50%, #ffffff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 32px 24px 72px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .brand {
+      display: grid;
+      gap: 4px;
+    }
+
+    .brand span {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-links a {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(58, 91, 255, 0.1);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      padding: 36px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+
+    .button.secondary {
+      background: rgba(21, 183, 158, 0.12);
+      color: var(--accent-2);
+    }
+
+    .section {
+      margin-top: 48px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      padding: 24px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 12px;
+    }
+
+    .tag {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+
+    .info-list {
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #e3e6f4;
+      color: var(--muted);
+      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 720px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Jorge García</h1>
-  <p>Espacio personal para mis proyectos.</p>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <span>Portfolio</span>
+        <strong>Jorge García</strong>
+      </div>
+      <nav class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#legal">Legal</a>
+      </nav>
+    </header>
 
-  <h2>Contacto</h2>
-  <p>Email: <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a></p>
+    <section class="hero" id="contacto">
+      <div>
+        <p class="tag">Proyectos cercanos y accesibles</p>
+        <h1>Ideas que buscan acompañar y facilitar el día a día.</h1>
+        <p>Diseño experiencias digitales sencillas para personas que buscan calma, motivación y conexión positiva.</p>
+      </div>
+      <div class="cta">
+        <a class="button" href="mailto:jorge.jjgd@gmail.com">Escríbeme</a>
+        <a class="button secondary" href="mailto:jorge.jjgd@gmail.com?subject=Proyecto%20Good%20Morning">Colaborar</a>
+      </div>
+    </section>
 
-  <h2>Proyectos</h2>
-  <h3>Good Morning</h3>
-  <p>
-    Aplicación móvil pensada para personas mayores, con una selección de imágenes con mensajes positivos
-    para ver y compartir fácilmente, por ejemplo por WhatsApp.
-  </p>
+    <section class="section" id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Good Morning</span>
+          <h3>Mensajes positivos para compartir</h3>
+          <p>
+            Aplicación móvil pensada para personas mayores, con imágenes motivadoras listas para enviar por WhatsApp
+            o guardar como favoritas.
+          </p>
+          <div class="info-list">
+            <span>✔️ Navegación sencilla</span>
+            <span>✔️ Contenido amable y respetuoso</span>
+          </div>
+        </article>
+        <article class="card">
+          <span class="tag">Enfoque</span>
+          <h3>Diseño humano y accesible</h3>
+          <p>Creo productos claros, cálidos y fáciles de usar, con tipografías legibles y jerarquías visuales limpias.</p>
+          <div class="info-list">
+            <span>✔️ Experiencias sin fricción</span>
+            <span>✔️ Visuales suaves y optimizados</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <h2>Legal</h2>
-  <p><a href="privacy.html">Política de privacidad</a></p>
-  <p><a href="terms.html">Términos de servicio</a></p>
+    <section class="section" id="legal">
+      <h2>Información legal</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Política de privacidad</h3>
+          <p>Conoce cómo se trata la información de la app y el sitio web.</p>
+          <a class="button secondary" href="privacy.html">Leer política</a>
+        </article>
+        <article class="card">
+          <h3>Términos de servicio</h3>
+          <p>Detalles sobre el uso de la app, responsabilidades y condiciones.</p>
+          <a class="button secondary" href="terms.html">Leer términos</a>
+        </article>
+      </div>
+    </section>
 
-  <hr>
-  <p>© 2026 Jorge García</p>
+    <footer>
+      <span>© 2026 Jorge García</span>
+      <span>Contacto directo: <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a></span>
+    </footer>
+  </div>
 </body>
 </html>
