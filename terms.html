@@ -3,75 +3,212 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Términos de servicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Términos de servicio | Jorge García</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #111323;
+      --muted: #5f6472;
+      --accent: #3a5bff;
+      --shadow: 0 24px 48px rgba(16, 24, 40, 0.08);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top left, #eef2ff 0%, var(--bg) 50%, #ffffff 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 24px 72px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(58, 91, 255, 0.1);
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .hero {
+      background: var(--card);
+      padding: 28px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero p {
+      color: var(--muted);
+    }
+
+    .content {
+      margin-top: 32px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 12px;
+    }
+
+    ol {
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e3e6f4;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Términos de servicio</h1>
-  <p>Última actualización: 24 de enero de 2026</p>
+  <div class="page">
+    <header>
+      <strong>Jorge García</strong>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="privacy.html">Privacidad</a>
+      </nav>
+    </header>
 
-  <p>
-    Estos términos regulan el uso de la aplicación Good Morning y este sitio web.
-    Al usar la app o el sitio aceptas estos términos.
-    Si no estás de acuerdo, no uses el servicio.
-  </p>
+    <section class="hero">
+      <h1>Términos de servicio</h1>
+      <p>Última actualización: 24 de enero de 2026</p>
+      <p>
+        Estos términos regulan el uso de la aplicación Good Morning y este sitio web.
+        Al usar la app o el sitio aceptas estos términos.
+        Si no estás de acuerdo, no uses el servicio.
+      </p>
+    </section>
 
-  <h2>Quién presta el servicio</h2>
-  <p>
-    Responsable: Jorge García
-    Email: <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a>
-  </p>
+    <section class="content">
+      <article class="card">
+        <h2>Quién presta el servicio</h2>
+        <p>
+          Responsable: Jorge García
+          Email: <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a>
+        </p>
+      </article>
 
-  <h2>Qué ofrece la app</h2>
-  <p>
-    Good Morning ofrece una colección de imágenes con mensajes positivos para ver, guardar en favoritos y compartir
-    usando las funciones del propio dispositivo.
-  </p>
+      <article class="card">
+        <h2>Qué ofrece la app</h2>
+        <p>
+          Good Morning ofrece una colección de imágenes con mensajes positivos para ver, guardar en favoritos y compartir
+          usando las funciones del propio dispositivo.
+        </p>
+      </article>
 
-  <h2>Uso permitido</h2>
-  <ol>
-    <li>Usar la app de manera personal y conforme a la ley.</li>
-    <li>No intentar acceder a partes no autorizadas ni interferir con el funcionamiento.</li>
-    <li>No usar la app para difundir contenido ilegal, ofensivo o que vulnere derechos de terceros.</li>
-  </ol>
+      <article class="card">
+        <h2>Uso permitido</h2>
+        <ol>
+          <li>Usar la app de manera personal y conforme a la ley.</li>
+          <li>No intentar acceder a partes no autorizadas ni interferir con el funcionamiento.</li>
+          <li>No usar la app para difundir contenido ilegal, ofensivo o que vulnere derechos de terceros.</li>
+        </ol>
+      </article>
 
-  <h2>Publicidad</h2>
-  <p>
-    La app puede mostrar anuncios.
-    La publicidad puede ser servida por terceros y su funcionamiento depende también de sus sistemas y políticas.
-  </p>
+      <article class="card">
+        <h2>Publicidad</h2>
+        <p>
+          La app puede mostrar anuncios.
+          La publicidad puede ser servida por terceros y su funcionamiento depende también de sus sistemas y políticas.
+        </p>
+      </article>
 
-  <h2>Propiedad intelectual</h2>
-  <p>
-    El diseño, el nombre de la app y el material propio del servicio están protegidos por la normativa aplicable.
-    Las imágenes mostradas pueden provenir de distintas fuentes, incluyendo contenido generado o editado con ayuda de inteligencia artificial.
-    No se concede ningún derecho para explotar comercialmente el contenido fuera del uso normal de la app.
-  </p>
+      <article class="card">
+        <h2>Propiedad intelectual</h2>
+        <p>
+          El diseño, el nombre de la app y el material propio del servicio están protegidos por la normativa aplicable.
+          Las imágenes mostradas pueden provenir de distintas fuentes, incluyendo contenido generado o editado con ayuda de inteligencia artificial.
+          No se concede ningún derecho para explotar comercialmente el contenido fuera del uso normal de la app.
+        </p>
+      </article>
 
-  <h2>Disponibilidad y cambios</h2>
-  <p>
-    Podemos modificar, suspender o retirar funciones para mejorar el servicio o por motivos técnicos o legales.
-    Intentaremos mantener la app operativa, pero no garantizamos disponibilidad continua.
-  </p>
+      <article class="card">
+        <h2>Disponibilidad y cambios</h2>
+        <p>
+          Podemos modificar, suspender o retirar funciones para mejorar el servicio o por motivos técnicos o legales.
+          Intentaremos mantener la app operativa, pero no garantizamos disponibilidad continua.
+        </p>
+      </article>
 
-  <h2>Limitación de responsabilidad</h2>
-  <p>
-    El servicio se ofrece tal cual.
-    No nos hacemos responsables de daños indirectos, pérdida de datos o interrupciones, salvo que la ley disponga lo contrario.
-    Cuando compartes contenido, la entrega y el tratamiento dependen de la aplicación de destino.
-  </p>
+      <article class="card">
+        <h2>Limitación de responsabilidad</h2>
+        <p>
+          El servicio se ofrece tal cual.
+          No nos hacemos responsables de daños indirectos, pérdida de datos o interrupciones, salvo que la ley disponga lo contrario.
+          Cuando compartes contenido, la entrega y el tratamiento dependen de la aplicación de destino.
+        </p>
+      </article>
 
-  <h2>Privacidad</h2>
-  <p>
-    El tratamiento de información se describe en la
-    <a href="privacy.html">Política de privacidad</a>.
-  </p>
+      <article class="card">
+        <h2>Privacidad</h2>
+        <p>
+          El tratamiento de información se describe en la
+          <a href="privacy.html">Política de privacidad</a>.
+        </p>
+      </article>
 
-  <h2>Contacto</h2>
-  <p>
-    Para dudas o incidencias, escribe a
-    <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a>.
-  </p>
+      <article class="card">
+        <h2>Contacto</h2>
+        <p>
+          Para dudas o incidencias, escribe a
+          <a href="mailto:jorge.jjgd@gmail.com">jorge.jjgd@gmail.com</a>.
+        </p>
+      </article>
+    </section>
 
-  <p><a href="index.html">Volver al inicio</a></p>
+    <footer>
+      <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+  </div>
 </body>
 </html>
